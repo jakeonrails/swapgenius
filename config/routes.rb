@@ -1,5 +1,8 @@
 Swapgenius::Application.routes.draw do
+
   devise_for :users
+
+  resource :dashboard
 
   resources :categories
 
@@ -7,7 +10,7 @@ Swapgenius::Application.routes.draw do
 
   resources :needs
 
-  root :to => "needs#index"
+  root :to => "dashboards#show"
 
 end
 
