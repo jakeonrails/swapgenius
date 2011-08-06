@@ -12,6 +12,8 @@ gem "jquery-rails"
 gem "simple_form"
 gem "acts_as_commentable"
 
+gem "oa-oauth", :require => "omniauth/oauth"
+
 group :development, :test do
   gem "rspec-rails", ">= 2.0.1"
 end
