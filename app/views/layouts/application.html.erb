@@ -11,22 +11,33 @@
 	<div id="header">
 		<div class="widthWrapper">
 			<div id="logo">&nbsp;</div>
+			<div id="navigation">
+			  <% if user_signed_in? %>
+			    Signed in as <%= current_user.email %>
+			    |
+			    <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+			  <% else %>
+			    <%= link_to "Sign in", new_user_session_path %>
+			    |
+			    <%= link_to "Register", new_user_registration_path %>
+			  <% end %>
+			</div>
+			<br style='clear:both'>
 		</div>
 	</div>
-	<div id="navigation">
-	  <% if user_signed_in? %>
-	    Signed in as <%= current_user.email %>
-	    |
-	    <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
-	  <% else %>
-	    <%= link_to "Sign in", new_user_session_path %>
-	    |
-	    <%= link_to "Register", new_user_registration_path %>
-	  <% end %>
-	</div>
 	<div id="breadcrumb"></div>
-<%= yield %>
-
+	<div id="content">
+		<div class="widthWrapper">
+		<%= yield %>
+		</div>
+	</div>
+	<div id="footer">
+		<div id="footer_text">
+			<div class="widthWrapper">
+				&copy;2011 - SwapGeni.us
+			</div>
+		</div>
+	</div>
 </body>
 </html>
 

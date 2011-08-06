@@ -1,6 +1,15 @@
 /*Primary Gray: #3d3939 */
 /*Blue: #25aae1*/
 
+body{
+	background-color:#ddd;
+}
+
+A:link {text-decoration: none;}
+A:visited {text-decoration: none;}
+A:active {text-decoration: none;}
+A:hover {text-decoration: underline; color: red; background-color:transparent !important;}
+
 #header{
 	height:70px;
 	background-color:#3d3939;
@@ -17,9 +26,37 @@
 	background-image:url('../images/logo.png');
 	width:400px;
 	height:65px;
+	float:left;
 }
+
+#navigation{
+	margin-top:30px;
+	color:white;
+	float:right;
+}
+
+#navigation A:link {text-decoration: none; color:white;}
+#navigation A:visited {text-decoration: none; color:white;}
+#navigation A:active {text-decoration: none; color:white;}
+#navigation A:hover {text-decoration: underline; color: #dddddd;}
 
 .widthWrapper{
 	width:960px;
 	margin:0px auto;
+}
+
+#content{
+	min-height:350px;
+}
+
+#footer{
+	height:150px;
+	overflow:hidden;
+	background-color:#3d3939;
+	color:white;
+}
+
+#footer_text{
+	margin-top:20px;
+	text-align:center;
 }
