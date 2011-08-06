@@ -5,10 +5,10 @@ body{
 	background-color:#ddd;
 }
 
-A:link {text-decoration: none;}
-A:visited {text-decoration: none;}
-A:active {text-decoration: none;}
-A:hover {text-decoration: underline; color: red; background-color:transparent !important;}
+A:link {text-decoration: none; color:#3d3939;}
+A:visited {text-decoration: none; color:#3d3939;}
+A:active {text-decoration: none; color:#3d3939;}
+A:hover {text-decoration: underline; color: #25aae1  !important; background-color:transparent !important;}
 
 #header{
 	height:70px;
@@ -49,6 +49,42 @@ A:hover {text-decoration: underline; color: red; background-color:transparent !i
 	min-height:350px;
 }
 
+#whySwap_large{
+	
+}
+
+#whySwap_text{
+	font:bold 24px arial;
+	text-align:center;
+	float:left;
+	width:350px;
+	margin-top:60px;
+	padding:0px 5px;
+}
+
+.signup_button_wrapper{
+	text-align:right;
+	margin-top:20px;	
+}
+
+#whySwap_images{
+	float:right;	
+	width:600px;
+	margin-top:15px;
+}
+
+.whySwap_image{
+	text-align:center;
+	font:bold 20px arial;
+	float:right;
+	width:300px;
+}
+
+.forButton{
+	margin-right:325px;
+	z-index:5;
+}
+
 #footer{
 	height:150px;
 	overflow:hidden;
@@ -59,4 +95,35 @@ A:hover {text-decoration: underline; color: red; background-color:transparent !i
 #footer_text{
 	margin-top:20px;
 	text-align:center;
+}
+
+#action_menu{
+	margin:0px;
+	padding:0px;
+	margin-left:20px;
+}
+
+#action_menu li{
+	list-style-type:none;
+}
+
+.column_header{
+	background-color:#3d3939;
+	color:white;
+	font: 14px arial;
+	padding:4px;
+}
+
+.column_object{
+	border:1px solid #3d3939;
+	padding:5px;
+	border-top:0px;
+}
+
+.additionalHeader{
+	margin-top:20px;
+}
+
+.input_object{
+	margin:5px auto;
 }

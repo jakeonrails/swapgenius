@@ -1,0 +1,20 @@
+#user_container{
+	margin-top:20px;
+}
+
+#user_container h3{
+	font:bold 24px arial;
+	border-bottom:1px solid black;
+}
+
+.input_object{
+	text-align:right;
+	width:500px;
+	margin:10px 0px;
+}
+
+.input_object input{
+	margin-left: 5px;
+	border:1px solid #999999;
+	padding:3px;
+}
