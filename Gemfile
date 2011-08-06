@@ -10,6 +10,7 @@ gem 'sqlite3'
 gem "devise"
 gem "jquery-rails"
 gem "simple_form"
+gem "acts_as_commentable"
 
 group :development, :test do
   gem "rspec-rails", ">= 2.0.1"

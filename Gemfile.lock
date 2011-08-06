@@ -28,6 +28,7 @@ GEM
       activemodel (= 3.0.9)
       activesupport (= 3.0.9)
     activesupport (3.0.9)
+    acts_as_commentable (3.0.1)
     arel (2.0.10)
     bcrypt-ruby (2.1.4)
     bcrypt-ruby (2.1.4-x86-mingw32)
@@ -103,6 +104,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  acts_as_commentable
   devise
   jquery-rails
   rails (= 3.0.9)
