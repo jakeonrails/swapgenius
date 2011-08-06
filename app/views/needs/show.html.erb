@@ -16,10 +16,11 @@
 </p>
 
 <p>
-  <b>Skill:</b>
-  <%= @need.skill %>
+  <b>Category:</b>
+  <%= @need.category.name %>
 </p>
 
 
 <%= link_to 'Edit', edit_need_path(@need) %> |
 <%= link_to 'Back', needs_path %>
+
