@@ -20,6 +20,13 @@
   <%= @need.category.name %>
 </p>
 
+<% if user_signed_in? %>
+  <h3>Make an offer to fill this Need</h3>
+  <%= render :partial => "offers/form" %>
+<% else %>
+  <%= link_to "Sign in", new_user_session_path %>
+  to make an offer on this Need
+<% end %>
 
 <%= link_to 'Edit', edit_need_path(@need) %> |
 <%= link_to 'Back', needs_path %>

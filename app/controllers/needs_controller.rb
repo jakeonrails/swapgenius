@@ -17,6 +17,7 @@ class NeedsController < ApplicationController
   # GET /needs/1.xml
   def show
     @need = Need.find(params[:id])
+    @offer = current_user.offers.new if user_signed_in?
 
     respond_to do |format|
       format.html # show.html.erb
