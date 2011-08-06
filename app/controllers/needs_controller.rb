@@ -1,4 +1,7 @@
 class NeedsController < ApplicationController
+
+  before_filter :authenticate_user!, :except => [:index, :show]
+
   # GET /needs
   # GET /needs.xml
   def index
@@ -24,7 +27,8 @@ class NeedsController < ApplicationController
   # GET /needs/new
   # GET /needs/new.xml
   def new
-    @need = Need.new
+    @need = current_user.needs.new
+
 
     respond_to do |format|
       format.html # new.html.erb
@@ -34,13 +38,13 @@ class NeedsController < ApplicationController
 
   # GET /needs/1/edit
   def edit
-    @need = Need.find(params[:id])
+    @need = current_user.needs.find(params[:id])
   end
 
   # POST /needs
   # POST /needs.xml
   def create
-    @need = Need.new(params[:need])
+    @need = current_user.needs.new(params[:need])
 
     respond_to do |format|
       if @need.save
@@ -56,7 +60,7 @@ class NeedsController < ApplicationController
   # PUT /needs/1
   # PUT /needs/1.xml
   def update
-    @need = Need.find(params[:id])
+    @need = current_user.needs.find(params[:id])
 
     respond_to do |format|
       if @need.update_attributes(params[:need])
@@ -72,7 +76,7 @@ class NeedsController < ApplicationController
   # DELETE /needs/1
   # DELETE /needs/1.xml
   def destroy
-    @need = Need.find(params[:id])
+    @need = current_user.needs.find(params[:id])
     @need.destroy
 
     respond_to do |format|
@@ -81,3 +85,4 @@ class NeedsController < ApplicationController
     end
   end
 end
+
