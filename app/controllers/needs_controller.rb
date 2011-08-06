@@ -5,7 +5,7 @@ class NeedsController < ApplicationController
   # GET /needs
   # GET /needs.xml
   def index
-    @needs = Need.all
+    @needs = Need.paginate :page => params[:page], :order => 'created_at DESC'
 
     respond_to do |format|
       format.html # index.html.erb

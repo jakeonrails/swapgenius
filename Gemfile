@@ -11,7 +11,7 @@ gem "devise"
 gem "jquery-rails"
 gem "simple_form"
 gem "acts_as_commentable"
-
+gem "will_paginate"
 gem "oa-oauth", :require => "omniauth/oauth"
 
 group :development, :test do
