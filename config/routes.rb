@@ -1,4 +1,8 @@
 Swapgenius::Application.routes.draw do
+  resources :offers
+
+  resources :needs
+
   devise_for :users
 
   # The priority is based upon order of creation:
