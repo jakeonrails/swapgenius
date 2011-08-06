@@ -1,9 +1,12 @@
 Swapgenius::Application.routes.draw do
+  devise_for :users
+
+  resources :categories
+
   resources :offers
 
   resources :needs
 
-  devise_for :users
 
   root :to => "needs#index"
 
