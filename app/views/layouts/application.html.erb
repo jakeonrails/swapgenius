@@ -13,8 +13,14 @@
 			<div id="logo">&nbsp;</div>
 		</div>
 	</div>
+	<div id="navigation">
+	  <% if user_signed_in? %>
+	  <% else %>
+	  <% end %>
+	</div>
 	<div id="breadcrumb"></div>
 <%= yield %>
 
 </body>
 </html>
+
