@@ -1,0 +1,25 @@
+/*Primary Gray: #3d3939 */
+/*Blue: #25aae1*/
+
+#header{
+	height:70px;
+	background-color:#3d3939;
+}
+
+#breadcrumb
+{
+	height:32px;
+	background-image:url('../images/crumb_background.jpg');
+	background-repeat:repeat-x;
+}
+
+#logo{
+	background-image:url('../images/logo.png');
+	width:400px;
+	height:65px;
+}
+
+.widthWrapper{
+	width:960px;
+	margin:0px auto;
+}
